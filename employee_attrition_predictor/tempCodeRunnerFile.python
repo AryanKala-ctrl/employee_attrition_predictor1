@@ -1,0 +1,31 @@
+from itertools import combinations
+
+# Given list of strings
+words = ["python", "advanced", "code", "programming", "data"]
+
+# 1. List comprehension: length of each word
+lengths = [len(word) for word in words]
+
+# 2. Dictionary comprehension: word and its length
+word_lengths = {word: len(word) for word in words}
+
+# 3. Set comprehension: unique vowels found in the words
+vowels = {
+    ch.lower()
+    for word in words
+    for ch in word
+    if ch.lower() in "aeiou"
+}
+
+print("Original words:", words)
+print("Word lengths:", lengths)
+print("Word-length dictionary:", word_lengths)
+print("Unique vowels:", vowels)
+
+# 4. Generate all possible combinations of a set
+items = {1, 2, 3}
+items = sorted(items)
+
+for r in range(len(items) + 1):
+    print(f"Combinations of size {r}:",
+          list(combinations(items, r)))

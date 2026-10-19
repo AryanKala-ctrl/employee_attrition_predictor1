@@ -1,0 +1,4 @@
+Timestamp,Model,Age,Department,JobRole,MonthlyIncome,JobSatisfaction,OverTime,YearsAtCompany,DistanceFromHome,Prediction,ProbabilityYes
+2026-10-14 15:13:10,Decision Tree,35,HR,HR Executive,5000,3,No,5,10,Yes,0.6651
+2026-10-14 16:07:31,Decision Tree,35,HR,HR Executive,5000,3,No,5,10,Yes,0.6651
+2026-10-14 16:21:09,Naive Bayes,50,HR,HR Executive,50000,4,No,30,10,No,0.0
